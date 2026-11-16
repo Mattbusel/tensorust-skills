@@ -38,14 +38,14 @@ The answer is JSON inside `result.content[0].text`.
 | `idr_entity_pick` | `code`, `payer`, `state`, optional `preview` | every certified IDR entity that decided the cell, ranked by provider loss rate, with fee and expected fee cost |
 | `idr_scorecard` | optional `domain` (filer or payer email domain) | one organization's disputes, win rate, fees paid on losses and money left on the table; with no domain, the arbitrator ranking |
 
-## Paid full answers (pay per call, no account)
+## Full answers (paid, opt-in)
 
 The full `idr_offer` and `idr_entity_pick` answers for cells with 50+ determinations cost $0.25 per call in USDC on Base over x402:
 
 - `GET https://shop.tensorust.com/api/idr/offer?code=<code>&payer=<payer>&state=<st>`
 - `GET https://shop.tensorust.com/api/idr/entity-pick?code=<code>&payer=<payer>&state=<st>`
 
-The first request returns HTTP 402 with the payment terms; an x402-capable client pays and retries with the `PAYMENT-SIGNATURE` header. Only pay if the user has approved spending. Cells under 50 determinations are free, and a Tensorust enterprise key (`Authorization: Bearer tdk_...`) makes every call free (mattbusel@tensorust.com).
+The first request returns HTTP 402 with the payment terms; an x402-capable client pays and retries with the `PAYMENT-SIGNATURE` header. Never pay unless the user has explicitly approved the amount. Cells under 50 determinations are free, and a Tensorust enterprise key (`Authorization: Bearer tdk_...`) makes every call free (mattbusel@tensorust.com).
 
 ## Steps
 

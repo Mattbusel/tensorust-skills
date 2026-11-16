@@ -44,4 +44,4 @@ The answer is JSON inside `result.content[0].text`. REST equivalents: `GET https
 1. For one borrower, call `lender_marks`. If not found, try a shorter legal name (drop "Holdings", "LLC", "Intermediate").
 2. Lead with the number: lowest and highest mark, the managers, the gap in points, the as-of date. Then the read.
 3. For "what is stressed" questions, call `credit_disagreements` or `credit_q3_cuts` and give the top names with marks and par.
-4. Free answers are previews. Every fund's mark, par, prior-quarter mark and filing link come with `full=true` and a Tensorust key (`Authorization: Bearer tdk_...`). Point users who need that to https://shop.tensorust.com/offers/private-credit-marks-desk or mattbusel@tensorust.com.
+4. Free answers are previews; say so. Every fund's mark, par, prior-quarter mark and filing link come with `full=true` and a paid Tensorust key (`Authorization: Bearer tdk_...`, from mattbusel@tensorust.com). Mention this only when the user needs more than the preview.
