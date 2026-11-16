@@ -1,0 +1,41 @@
+{
+  "name": "tensorust-skills",
+  "owner": {
+    "name": "Matthew Busel",
+    "email": "mattbusel@tensorust.com"
+  },
+  "metadata": {
+    "description": "Public-records data skills from Tensorust: counterparty and restricted-vendor screening, private credit loan marks, No Surprises Act IDR offers, and LLM API prices",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "tensorust",
+      "description": "Counterparty screen (ownership, control and DoD 1260H / Section 889 / FCC Covered / UFLPA / BIOSECURE vendor lists), BDC private credit mark cross-check, federal IDR offer and arbitrator pick, and LLM API cost, backed by the Tensorust Ontology MCP server",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matthew Busel",
+        "email": "mattbusel@tensorust.com"
+      },
+      "homepage": "https://tensorust.com",
+      "repository": "https://github.com/Mattbusel/tensorust-skills",
+      "license": "MIT",
+      "keywords": ["kyc", "vendor-screening", "sanctions", "private-credit", "bdc", "no-surprises-act", "idr", "llm-pricing", "mcp"],
+      "category": "data",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/counterparty-screen",
+        "./skills/bdc-mark-crosscheck",
+        "./skills/idr-offer",
+        "./skills/llm-api-cost"
+      ],
+      "mcpServers": {
+        "tensorust-ontology": {
+          "type": "http",
+          "url": "https://shop.tensorust.com/api/mcp"
+        }
+      }
+    }
+  ]
+}
