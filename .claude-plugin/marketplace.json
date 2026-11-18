@@ -20,7 +20,17 @@
       "homepage": "https://tensorust.com",
       "repository": "https://github.com/Mattbusel/tensorust-skills",
       "license": "MIT",
-      "keywords": ["kyc", "vendor-screening", "sanctions", "private-credit", "bdc", "no-surprises-act", "idr", "llm-pricing", "mcp"],
+      "keywords": [
+        "kyc",
+        "vendor-screening",
+        "sanctions",
+        "private-credit",
+        "bdc",
+        "no-surprises-act",
+        "idr",
+        "llm-pricing",
+        "mcp"
+      ],
       "category": "data",
       "source": "./",
       "strict": false,
@@ -36,6 +46,13 @@
           "url": "https://shop.tensorust.com/api/mcp"
         }
       }
+    },
+    {
+      "name": "tensorust-private-credit",
+      "description": "Cross-check a private loan's mark against every BDC lender, screen a counterparty for ownership, lender stress and banned-vendor exposure, and track Q3 2026 markdowns. Uses the Tensorust Ontology connector.",
+      "source": "./plugins/tensorust-private-credit",
+      "category": "data",
+      "homepage": "https://shop.tensorust.com/mcp"
     }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "name": "tensorust-private-credit",
+  "displayName": "Tensorust Private Credit and Counterparty",
+  "version": "1.0.0",
+  "description": "Cross-check a private loan's value against every BDC lender that holds it, screen a counterparty for ownership, lender stress and banned-vendor exposure, and track Q3 2026 loan markdowns as BDCs file. Uses the Tensorust Ontology connector, built from public SEC, USAspending, FCC and county records.",
+  "author": {
+    "name": "Tensorust LLC",
+    "url": "https://tensorust.com",
+    "email": "mattbusel@tensorust.com"
+  },
+  "homepage": "https://shop.tensorust.com/mcp",
+  "repository": "https://github.com/Mattbusel/tensorust-skills",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://shop.tensorust.com/privacy",
+  "keywords": [
+    "private-credit",
+    "bdc",
+    "valuation",
+    "kyc",
+    "counterparty",
+    "sanctions",
+    "public-records"
+  ]
+}

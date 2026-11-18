@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tensorust": {
+      "type": "http",
+      "url": "https://shop.tensorust.com/api/connector"
+    }
+  }
+}
